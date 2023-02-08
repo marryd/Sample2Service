@@ -1,5 +1,5 @@
-﻿using Contracts;
-using Payers.Domain;
+﻿using Payers.Domain;
+using Payers.Ports;
 
 namespace Payers.UseCases
 {

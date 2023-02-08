@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Contracts\Payers.Contracts\Payers.Ports.csproj" />
+    <ProjectReference Include="..\..\Domain\Potatoes.Domain\Potatoes.Domain.csproj" />
   </ItemGroup>
 
 </Project>

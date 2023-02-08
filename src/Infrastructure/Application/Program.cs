@@ -1,21 +1,27 @@
-using Contracts;
 using Database.Configuration;
 using Kpp;
-using Payers.Application;
+using Payers.Facade;
+using Payers.Ports;
 using Payers.UseCases;
-using Potatoes.Application;
+using PayerSystem;
+using Potatoes.Facade;
+using Potatoes.Ports;
 using Potatoes.UseCases;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 //apps
-builder.Services.AddScoped<PayerApp>();
-builder.Services.AddScoped<PotatoApp>();
+builder.Services.AddScoped<IPayerApp, PayerApp>();
+builder.Services.AddScoped<IPotatoApp, PotatoApp>();
 
 // uc
 builder.Services.AddScoped<PayerUseCase>();
 builder.Services.AddScoped<PotatoUseCase>();
+
+// ports
+
+builder.Services.AddScoped<IPayerSystem, PayerClient>();
 
 // db
 builder.Services.AddPayersDataStore();

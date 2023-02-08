@@ -1,4 +1,4 @@
 ﻿namespace Potatoes.Domain
 {
-    public record Potato(int Id, string Name);
+    public record Potato(int Id, string Name, int PayerId);
 }

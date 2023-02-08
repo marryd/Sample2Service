@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Payers\Facade\Payers.Facade\Payers.Facade.csproj" />
+    <ProjectReference Include="..\..\Application\Payers\UseCases\Payers.UseCases\Payers.UseCases.csproj" />
+    <ProjectReference Include="..\..\Application\Potatoes\Facade\Potatoes.Facade\Potatoes.Facade.csproj" />
+    <ProjectReference Include="..\..\Application\Potatoes\UseCases\Potatoes.UseCases\Potatoes.UseCases.csproj" />
+    <ProjectReference Include="..\SecondaryAdapters\KppHttp\KppHttp.csproj" />
+    <ProjectReference Include="..\SecondaryAdapters\PayerPotatoSqlDatabase\PayerPotatoSqlDatabase.csproj" />
+    <ProjectReference Include="..\SecondaryAdapters\PayerSystem\PayerSystem.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+    <Folder Include="Logging\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+
+</Project>

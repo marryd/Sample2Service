@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Ports\Potatoes.Ports\Potatoes.Ports.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Application\Potatoes\Facade\Potatoes.Facade\Potatoes.Facade.csproj" />
   </ItemGroup>
 
 </Project>
