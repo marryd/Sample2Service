@@ -10,7 +10,6 @@ using Potatoes.UseCases;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 //apps
 builder.Services.AddScoped<IPayerApp, PayerApp>();
 builder.Services.AddScoped<IPotatoApp, PotatoApp>();

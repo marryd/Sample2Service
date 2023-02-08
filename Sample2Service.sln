@@ -21,11 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Potatoes.UseCases", "src\Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CostEmbursedHospitalCare", "src\Infrastructure\Application\CostEmbursedHospitalCare.csproj", "{9E9C3E3B-B105-459C-9907-84612E910078}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecondaryAdapters", "SecondaryAdapters", "{845CA56A-B08F-42FF-9648-66B011C87A44}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OutAdapters", "OutAdapters", "{845CA56A-B08F-42FF-9648-66B011C87A44}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payers.Ports", "src\Application\Payers\Contracts\Payers.Contracts\Payers.Ports.csproj", "{B2EF66EE-5679-4394-95AD-96268DA230DD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrimaryAdapters", "PrimaryAdapters", "{C549BFA5-F6B6-44B8-9992-D56D3A6D9C2B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InAdapters", "InAdapters", "{C549BFA5-F6B6-44B8-9992-D56D3A6D9C2B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Potatoes.Ports", "src\Application\Potatoes\Ports\Potatoes.Ports\Potatoes.Ports.csproj", "{BAB8140E-BD15-4C95-8123-9D58DDD6CB21}"
 EndProject
@@ -37,13 +37,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payers.Facade", "src\Applic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Potatoes.Facade", "src\Application\Potatoes\Facade\Potatoes.Facade\Potatoes.Facade.csproj", "{8DC96CAA-0288-412D-8155-79B6CBD0A5CD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PotatoRestApi", "src\Infrastructure\PrimaryAdapters\PotatoRestApi\PotatoRestApi.csproj", "{C8362E3C-106E-440F-A35F-3692A9490373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PotatoRestApi", "src\Infrastructure\InAdapters\PotatoRestApi\PotatoRestApi.csproj", "{C8362E3C-106E-440F-A35F-3692A9490373}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KppHttp", "src\Infrastructure\SecondaryAdapters\KppHttp\KppHttp.csproj", "{4EAC9054-70DE-47BE-8903-2D33B2F44AB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KppHttp", "src\Infrastructure\OutAdapters\KppHttp\KppHttp.csproj", "{4EAC9054-70DE-47BE-8903-2D33B2F44AB3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayerPotatoSqlDatabase", "src\Infrastructure\SecondaryAdapters\PayerPotatoSqlDatabase\PayerPotatoSqlDatabase.csproj", "{05AE5B33-3EA5-48A6-B7E5-AE3F33273FF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayerPotatoSqlDatabase", "src\Infrastructure\OutAdapters\PayerPotatoSqlDatabase\PayerPotatoSqlDatabase.csproj", "{05AE5B33-3EA5-48A6-B7E5-AE3F33273FF0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayerSystem", "src\Infrastructure\SecondaryAdapters\PayerSystem\PayerSystem.csproj", "{F99F687B-4B81-4CB1-B852-C0F1481A6796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayerSystem", "src\Infrastructure\OutAdapters\PayerSystem\PayerSystem.csproj", "{F99F687B-4B81-4CB1-B852-C0F1481A6796}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
